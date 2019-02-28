@@ -1,16 +1,27 @@
 
 body {
   font-weight: bold;
-  font-size: 100px;
+  font-size: 40px;
 }
+
+#topbar_icon {
+  position:absolute;
+  top:200;
+  height: 50;
+  z-index: 1000;
+}
+
 
 #topbar {
   position:absolute;
   top:0;
   height: 0;
+  line-height: 40px;
   overflow: hidden;
   width: 100%;
-  background-color: pink;
+  z-index: 1000;
+  background-color: #00688B;
+  border-bottom: 2px solid white;
 }
 
 @keyframes shrink {
@@ -21,11 +32,20 @@ body {
   from {top: 0px;}
   to {top: 40px;}
 }
+
+@keyframes xshrink {
+  from {top: 80px;}
+  to {top: 40px;}
+}
+@keyframes xexpand {
+  from {top: 40px;}
+  to {top: 80px;}
+}
 @keyframes topbar_shrink {
-  from {height: 40px;}
-  to {height: 0px;}
+  from {height: 40px; opacity: 1;}
+  to {height: 0px; opacity: 0;}
 }
 @keyframes topbar_expand {
-  from {height: 0px;}
-  to {height: 40px;}
+  from {height: 0px; opacity: 0;}
+  to {height: 40px; opacity: 1;}
 }

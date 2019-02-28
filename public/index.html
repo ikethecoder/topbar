@@ -12,14 +12,13 @@
     border: 0px solid green;
   }
 
-  }
   #body {
     position: absolute;
-    top: 20px;
+    top: 40px;
     width: 100%;
     bottom: 0;
     color: blue;
-    border: 0px solid blue;
+    border: 5px solid blue;
   }
   #header div {
     border: 5px solid green;
@@ -40,6 +39,24 @@
     animation-iteration-count: 1;
     animation-direction: normal;
   }
+
+  .xshrink {
+    top:40px !important; 
+    animation-name: xshrink;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+  }
+
+  .xexpand {
+    top:80px !important;
+    animation-name: xexpand;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+  }  
+
+
   .topbar_shrink {
     height: 0 !important;    
     animation-name: topbar_shrink;
