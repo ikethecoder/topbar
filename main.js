@@ -16,7 +16,7 @@ if (!document.getElementById(cssId))
 
 }
 
-window._tog = false
+window._tog = true
 function _close (el) {
     document.getElementById("topbar").classList.remove("topbar_expand");
     document.getElementById("header").classList.remove("shrink");
@@ -24,11 +24,11 @@ function _close (el) {
     document.getElementById("header").classList.remove("expand");
 
     if (window._tog) {
-      document.getElementById("topbar").classList.add("topbar_shrink");
+      document.getElementById("topbar").classList.add("topbar_expand");
       document.getElementById("header").classList.add("expand");
 
     } else {
-      document.getElementById("topbar").classList.add("topbar_expand");
+      document.getElementById("topbar").classList.add("topbar_shrink");
       document.getElementById("header").classList.add("shrink");
     }
     window._tog = !window._tog;    
@@ -46,8 +46,19 @@ tb.innerHTML = 'Hello there <button onclick="window._close(this)">close</button>
 body.insertBefore(tb, body.firstChild);
 }
 
+function place_icon() {
+
+var body  = document.getElementsByTagName('body')[0];
+var tb = document.createElement('div');
+tb.id = "topbar_icon";
+tb.class = "topbar";
+tb.innerHTML = '<button onclick="window._close(this)">close</button> ';
+
+body.appendChild(tb);
+}
 load_css()
 place_header()
+place_icon()
 document.write('hey');
 
 

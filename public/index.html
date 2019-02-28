@@ -26,7 +26,7 @@
   }
 
   .shrink {
-    top:0px; 
+    top:0px !important; 
     animation-name: shrink;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -34,14 +34,14 @@
   }
 
   .expand {
-    top:40px;
+    top:40px !important;
     animation-name: expand;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-direction: normal;
   }
   .topbar_shrink {
-    
+    height: 0 !important;    
     animation-name: topbar_shrink;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -49,6 +49,7 @@
   }
 
   .topbar_expand {
+    height: 40px !important;
     animation-name: topbar_expand;
     animation-duration: 1s;
     animation-iteration-count: 1;
