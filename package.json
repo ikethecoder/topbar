@@ -1,0 +1,24 @@
+{
+  "name": "topbar",
+  "version": "0.1.0",
+  "description": "A browser library for managing a discrete top navigation bar",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify main.js -o public/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikethecoder/topbar.git"
+  },
+  "keywords": [
+    "navigation",
+    "browser"
+  ],
+  "author": "ikethecoder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikethecoder/topbar/issues"
+  },
+  "homepage": "https://github.com/ikethecoder/topbar#readme"
+}

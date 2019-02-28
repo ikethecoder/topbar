@@ -1,0 +1,30 @@
+
+body {
+  font-weight: bold;
+  font-size: 100px;
+}
+
+#topbar {
+  position:absolute;
+  top:0;
+  height: 40px;
+  width: 100%;
+  background-color: pink;
+}
+
+@keyframes shrink {
+  from {top: 40px;}
+  to {top: 0px;}
+}
+@keyframes expand {
+  from {top: 0px;}
+  to {top: 40px;}
+}
+@keyframes topbar_shrink {
+  from {height: 40px;}
+  to {height: 0px;}
+}
+@keyframes topbar_expand {
+  from {height: 0px;}
+  to {height: 40px;}
+}
