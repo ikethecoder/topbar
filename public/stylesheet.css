@@ -17,21 +17,23 @@ span.topbar {
 
 .topbar-menu-item {
   display: inline-block;
+  padding: 0 5px 0 5px;
   margin-right:15px;
   font-size: 13px;
   font-weight: 600;
   color: #bbb;
-  border-radius: 0px;
+  border-radius: 3px; /*3px 3px 0 0;*/
   x-min-width: 100px;
   text-align: center;
   cursor: default;
   fill: #bbb;
-  transition: color 0.5s ease;
+  transition: color,background-color 0.5s ease;
 }
 
 .topbar-menu-item:hover {
   color: white;
   fill:white;
+  background-color: #008dbc;
 }
 
 .topbar_toggle {
