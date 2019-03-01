@@ -16,6 +16,7 @@
     overflow: hidden;
     color: green;
     border: 0px solid green;
+    transition: top 0.5s ease;
   }
 
   #body {
@@ -25,58 +26,36 @@
     bottom: 0;
     color: blue;
     border: 5px solid blue;
+    transition: top 0.5s ease;
   }
   #header div {
     border: 5px solid green;
   }
 
-  .shrink {
-    top:0px !important; 
-    animation-name: shrink;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-  }
-
   .expand {
-    top:70px !important;
-    animation-name: expand;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-  }
-
-  .xshrink {
-    top:40px !important; 
-    animation-name: xshrink;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
-    animation-direction: normal;
+    top:45px !important;
   }
 
   .xexpand {
-    top:110px !important;
-    animation-name: xexpand;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
-    animation-direction: normal;
+    top:85px !important;
   }  
 
-
-  .topbar_shrink {
-    height: 0 !important;    
-    animation-name: topbar_shrink;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
-    animation-direction: normal;
+  .topbar_expand {
+    height: 45px !important;
+    opacity: 1 !important;
   }
 
-  .topbar_expand {
+  .expand_plus {
+    top:70px !important;
+  }
+
+  .xexpand_plus {
+    top:110px !important;
+  }  
+
+  .topbar_expand_plus {
     height: 70px !important;
-    animation-name: topbar_expand;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
-    animation-direction: normal;
+    opacity: 1 !important;
   }
 
 </style>
