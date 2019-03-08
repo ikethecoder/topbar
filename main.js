@@ -75,7 +75,9 @@ var icon_black_bars = '<svg width="20" height="20" viewBox="0 0 1792 1792" xmlns
 var icon_white_times_circle = '<svg width="14" height="14" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z" fill="#fff"/></svg>';
 var icon_black_caret_down = '<svg width="14" height="14" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"/></svg>';
 
-var items = ["Developers", "Operations", "Security", "Gateway", "Vault", "Keycloak", "Gitea", "Go.CD", "Kubernetes", "Grafana", "Consul", "RPA", "Big Data", "IOT"];
+//var items = ["Developers", "Operations", "Security", "Gateway", "Vault", "Keycloak", "Gitea", "Go.CD"];
+var items = ["Developers", "Gateway", "Vault", "Consul", "Keycloak", "Gitea", "Go.CD"];
+// , "Kubernetes", "Grafana", "Consul", "RPA", "Big Data", "IOT"
 
 var menu_items = "";
 for (i in items ) {
@@ -88,7 +90,7 @@ function place_header() {
     var tb = document.createElement('div');
     tb.id = "topbar";
     tb.class = "topbar";
-    tb.innerHTML = '<span class="topbar-title">' + '23432432.xyz' + '</span> ' + menu_items + '';
+    tb.innerHTML = '<div><span class="topbar-title">' + '23432432.xyz' + '</span> ' + menu_items + '</div><div class="topbar-detail">' + 'collaboration_channel : <span class="topbar-number">23</span> | problems : <span class="topbar-number">12</span> | source_repository : <span class="topbar-number">4</span> | alerts : 12' + '</div>';
     // <span onclick="window._close(this)" class="topbar">' + icon_white_times_circle + '</span> 
     // <span class="topbar-title">https://my-project.swes.xyz</span> 
     body.insertBefore(tb, body.firstChild);

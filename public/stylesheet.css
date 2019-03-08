@@ -7,6 +7,7 @@ span.topbar {
 .topbar-title {
   display: inline-block;
   margin-right:20px;
+  padding-left: 5px;
   font-size: 70%;
   color: white;
   border-radius: 0px;
@@ -20,20 +21,37 @@ span.topbar {
   padding: 0 5px 0 5px;
   margin-right:15px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 300;
   color: #bbb;
-  border-radius: 3px; /*3px 3px 0 0;*/
+  border-radius: 3px 3px 0 0;
   x-min-width: 100px;
   text-align: center;
   cursor: default;
   fill: #bbb;
-  transition: color,background-color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 .topbar-menu-item:hover {
   color: white;
   fill:white;
   background-color: #008dbc;
+}
+
+.topbar-detail {
+  background-color: #008dbc;
+  position:absolute;
+  padding: 5px;
+  font-size: 10px !important;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+
+.topbar-number {
+  background-color: #00688B;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .topbar_toggle {
@@ -50,7 +68,6 @@ span.topbar {
   font-size: 20px;
   position:absolute;
   top:0;
-  padding-left: 10px;
   line-height: 40px;
   height: 0;
   overflow: hidden;
@@ -63,28 +80,29 @@ span.topbar {
   transition: height 0.5s ease, opacity 0.5s ease;
 }
 
-@keyframes shrink {
-  from {top: 70px;}
-  to {top: 0px;}
-}
-@keyframes expand {
-  from {top: 0px;}
-  to {top: 70px;}
+.expand {
+  top:45px !important;
 }
 
-@keyframes xshrink {
-  from {top: 110px;}
-  to {top: 40px;}
+.xexpand {
+  top:85px !important;
+}  
+
+.topbar_expand {
+  height: 45px !important;
+  opacity: 1 !important;
 }
-@keyframes xexpand {
-  from {top: 40px;}
-  to {top: 110px;}
+
+.expand_plus {
+  top:85px !important;
 }
-@keyframes topbar_shrink {
-  from {height: 70px; opacity: 1;}
-  to {height: 0px; opacity: 0;}
+
+.xexpand_plus {
+  top:125px !important;
+}  
+
+.topbar_expand_plus {
+  height: 85px !important;
+  opacity: 1 !important;
 }
-@keyframes topbar_expand {
-  from {height: 0px; opacity: 0;}
-  to {height: 70px; opacity: 1;}
-}
+
